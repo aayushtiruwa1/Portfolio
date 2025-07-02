@@ -37,7 +37,7 @@ const Hero = () => {
                     onError={(e) => {
                       // Fallback to a different professional image if the first one fails
                       const target = e.target as HTMLImageElement;
-                      target.src = "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800";
+                      target.src = "https://media.licdn.com/dms/image/v2/D4D03AQGb128cekJxOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724331503194?e=1756944000&v=beta&t=eU6KbPSLJMDLYMmOjkez2qecULGsk4fPpigLeLN99KQ";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-400/20 to-purple-400/20 group-hover:from-blue-400/30 group-hover:to-purple-400/30 transition-all duration-500"></div>
