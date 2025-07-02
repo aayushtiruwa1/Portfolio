@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+    <section id="home" className="min-h-screen pt-24 flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
       <div className="absolute inset-0 bg-black/20"></div>
       
       {/* Animated background elements */}
