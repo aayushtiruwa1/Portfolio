@@ -66,7 +66,7 @@ const Hero = () => {
                 Learning to automate infrastructure and build scalable cloud solutions
               </p>
               <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Computer Science graduate passionate about DevOps practices, cloud technologies, and continuous learning. 
+                Ethical Hacking & Cyber Security graduate passionate about DevOps practices, cloud technologies, and continuous learning. 
                 Building hands-on experience through personal projects and certifications.
               </p>
               
