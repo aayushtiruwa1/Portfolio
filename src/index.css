@@ -2,6 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Cursor Styles */
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #10b981);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-out;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.custom-cursor::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+.custom-cursor.hover {
+  transform: scale(1.5);
+  background: linear-gradient(45deg, #ef4444, #f59e0b, #8b5cf6);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.7);
+}
+
+.custom-cursor.click {
+  transform: scale(0.8);
+  background: linear-gradient(45deg, #10b981, #3b82f6, #8b5cf6);
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.8);
+}
+
+.custom-cursor-trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-out;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Cursor variations for different elements */
+a, button, [role="button"] {
+  cursor: none !important;
+}
+
 /* Custom animations */
 @keyframes blob {
   0% {
@@ -59,4 +131,30 @@ html {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Cursor interaction effects */
+.cursor-magnetic {
+  transition: transform 0.3s ease-out;
+}
+
+.cursor-magnetic:hover {
+  transform: scale(1.05);
+}
+
+/* Special cursor effects for different sections */
+.hero-section * {
+  cursor: none !important;
+}
+
+.skills-section * {
+  cursor: none !important;
+}
+
+.projects-section * {
+  cursor: none !important;
+}
+
+.contact-section * {
+  cursor: none !important;
 }
