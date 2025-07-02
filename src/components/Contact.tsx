@@ -82,11 +82,17 @@ const Contact = () => {
           {/* Contact Information */}
           <div>
             <div className="flex items-center space-x-4 mb-8">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQGb128cekJxOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724331503194?e=1756944000&v=beta&t=eU6KbPSLJMDLYMmOjkez2qecULGsk4fPpigLeLN99KQ"
-                alt="DevOps Engineer"
-                className="w-16 h-16 rounded-full object-cover border-2 border-blue-400"
-              />
+              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-400">
+                <img
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="DevOps Engineer"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800";
+                  }}
+                />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Get In Touch</h3>
                 <p className="text-gray-400">Open to opportunities and collaboration</p>
