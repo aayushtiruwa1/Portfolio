@@ -69,6 +69,95 @@
   }
 }
 
+/* 3D Computer Animation Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fade-in-1 { 0% { opacity: 0; } 20% { opacity: 1; } }
+@keyframes fade-in-2 { 0% { opacity: 0; } 30% { opacity: 1; } }
+@keyframes fade-in-3 { 0% { opacity: 0; } 40% { opacity: 1; } }
+@keyframes fade-in-4 { 0% { opacity: 0; } 50% { opacity: 1; } }
+@keyframes fade-in-5 { 0% { opacity: 0; } 60% { opacity: 1; } }
+@keyframes fade-in-6 { 0% { opacity: 0; } 70% { opacity: 1; } }
+@keyframes fade-in-7 { 0% { opacity: 0; } 80% { opacity: 1; } }
+
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes key-glow {
+  0%, 100% {
+    background-color: #374151;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    background-color: #4b5563;
+    box-shadow: inset 0 1px 3px rgba(59, 130, 246, 0.3), 0 0 8px rgba(59, 130, 246, 0.2);
+  }
+}
+
+@keyframes float-code {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-30px) rotate(2deg);
+    opacity: 1;
+  }
+}
+
+.animate-typing {
+  animation: typing 3s steps(40, end) infinite;
+}
+
+.animate-fade-in-1 { animation: fade-in-1 6s ease-in-out infinite; }
+.animate-fade-in-2 { animation: fade-in-2 6s ease-in-out infinite; }
+.animate-fade-in-3 { animation: fade-in-3 6s ease-in-out infinite; }
+.animate-fade-in-4 { animation: fade-in-4 6s ease-in-out infinite; }
+.animate-fade-in-5 { animation: fade-in-5 6s ease-in-out infinite; }
+.animate-fade-in-6 { animation: fade-in-6 6s ease-in-out infinite; }
+.animate-fade-in-7 { animation: fade-in-7 6s ease-in-out infinite; }
+
+.animate-matrix-fall {
+  animation: matrix-fall linear infinite;
+}
+
+.animate-key-glow {
+  animation: key-glow ease-in-out infinite;
+}
+
+.animate-float-code {
+  animation: float-code ease-in-out infinite;
+}
+
 /* Cursor variations for different elements */
 a, button, [role="button"] {
   cursor: none !important;
