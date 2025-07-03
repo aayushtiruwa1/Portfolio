@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Monitor, Palette, Bell, Shield, Wifi, User, System } from 'lucide-react';
+import { Monitor, Palette, Bell, Shield, Wifi, User, Asterisk as System } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const Settings: React.FC = () => {
