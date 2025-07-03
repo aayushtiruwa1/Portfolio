@@ -31,13 +31,13 @@ const Hero = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
                   <img
-                    src="aayushtiruwa1/Portfolio/1724331503194.jpeg"
+                    src="/1724331503194.jpeg"
                     alt="Aayush Tiruwa - DevOps Engineer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      // Fallback to a different professional image if the first one fails
+                      // Fallback to a professional placeholder if the image fails to load
                       const target = e.target as HTMLImageElement;
-                      target.src = "aayushtiruwa1/Portfolio/1724331503194.jpeg";
+                      target.src = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-400/20 to-purple-400/20 group-hover:from-blue-400/30 group-hover:to-purple-400/30 transition-all duration-500"></div>

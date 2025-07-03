@@ -84,12 +84,12 @@ const Contact = () => {
             <div className="flex items-center space-x-4 mb-8">
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-400">
                 <img
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="DevOps Engineer"
+                  src="/1724331503194.jpeg"
+                  alt="Aayush Tiruwa - DevOps Engineer"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800";
+                    target.src = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800";
                   }}
                 />
               </div>
