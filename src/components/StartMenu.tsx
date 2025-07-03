@@ -7,7 +7,7 @@ import FileExplorer from './windows/FileExplorer';
 import Terminal from './windows/Terminal';
 import Notepad from './windows/Notepad';
 import Calculator from './windows/Calculator';
-import Settings as SettingsWindow from './windows/Settings';
+import SettingsWindow from './windows/Settings';
 
 interface StartMenuProps {
   onClose: () => void;
