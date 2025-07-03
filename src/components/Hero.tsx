@@ -37,7 +37,7 @@ const Hero = () => {
                     onError={(e) => {
                       // Fallback to a professional placeholder if the image fails to load
                       const target = e.target as HTMLImageElement;
-                      target.src = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800";
+                      target.src = "";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-400/20 to-purple-400/20 group-hover:from-blue-400/30 group-hover:to-purple-400/30 transition-all duration-500"></div>
